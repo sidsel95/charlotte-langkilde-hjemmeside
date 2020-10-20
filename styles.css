@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+height: 100%;
+}
+
+.content {
+    height: calc(100% - 90px);
+    background: white;
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+body {
+/*    background:  #f4f4f4;*/
+    height: 100%;
+    margin: auto;
+}
+
+hr {
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+/*------------HEADER---------------*/
+
+.wrapper {
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #373737;
+}
+
+.logo {
+    margin-left: 3%;
+    display: inline-block;
+}
+
+.nav {
+    display: table;
+    margin-right: 3%;
+}
+
+.nav .horizontal-ul {
+    display: table-row;
+}
+
+.nav .horizontal-li {
+    display: table-cell;
+    padding-left: 15px;
+}
+
+.nav .horizontal-li a {
+    font-size: 22px;
+    color: white;
+}
+
+.nav .horizontal-li a:hover {
+color: #898989;
+}
+
+.logo a {
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-align: left;
+    color: #373737;
+}
+
+.logo a {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+}
+
+nav ul li, a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'oswald', sans-serif;
+    color: #373737;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+h1 span {
+    display: block;
+    line-height: 35px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #373737;
+    min-width: 160px;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav {
+display: none;
+}
+
+/*------------FEATURES---------------*/
+
+.features {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.features article{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features article h4 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #373737;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.features p {
+font-family: 'Oswald', sans-serif;
+font-weight: 200;
+padding: 10px;
+color: #373737;
+font-size: 18px;
+}
+
+.features p:hover {
+    color: #898989;
+}
+
+.features article figure a {
+    padding: 0;
+    margin: 0;
+}
+
+.features img:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/*------------BEDRAGET---------------*/
+
+.bg-img {
+    background: rgba(112, 173, 173, 0.19);
+}
+
+.bedraget {
+    display: flex; 
+    justify-content: space-around;
+    padding-top: 50px;
+     background: rgba(112, 173, 173, 0.19);
+    padding-bottom: 30px;
+}
+
+.bedraget h4 {
+    line-height: 25px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 2;
+    font-family: oswald, sans-serif;
+}
+
+.bedraget p {
+    font-size: 12px;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+}
+
+.textboks {
+display: flex;
+text-align: center;
+flex-direction: column;
+}
+
+.stjerner {
+    margin-top: 15px;
+}
+
+h5 {
+margin-top: -12px;
+font-size: 12px;
+font-family: oswald, sans-serif;
+}
+
+.anmeldelser-p  {
+font-size: 12px;
+font-family: 'Merriweather', serif;
+line-height: 1.5; 
+}
+
+
+.anmeldelser2, h5 {
+    line-height: 25px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+
+.anmeldelser h5 {
+    line-height: 25px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.foto {
+    margin-bottom: 25px;
+}
+
+#bedraget {
+    margin-bottom: 25px;
+}
+
+/*------------EFTERSKRIFT---------------*/
+
+.efterskrift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.btn {
+    border: 2px solid #373737;
+    color: #373737;
+    width: 200px;
+    height: 50px;
+    background: white;
+    font-size: 15px;
+    margin: 6px;
+}
+
+.btn:hover, .btn:active {
+    color: #fff;
+    background: #373737;
+    transition: 0.2s;
+} 
+
+.btn a:hover {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.efterskrift, h6 {
+    font-size: 35px;
+    margin: 6px;
+    color: #373737;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2;
+}
+
+/*------------INFO---------------*/
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.kort {
+    background: #373737;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kort div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hallo {
+padding-right: 50px;
+padding-bottom: 30px;
+
+}
+
+.info h4 {
+font-size: 20px;
+padding: 10px;
+font-family: Oswald, sans-serif;
+letter-spacing: 2;
+}
+
+.link {
+padding-right: 50px;
+}
+
+span {
+    color: white;
+}
+
+.kort p {
+color: white;
+font-family: 'Merriweather', serif;
+line-height: 1.5;
+font-size: 15px;
+margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+padding: 10px;
+}
+ 
+
+
+
+/*------------ FOOTER ---------------*/
+
+/*
+footer {
+    width: 1400px;
+    height: 100px;
+    background: grey;
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    
+}
+*/
+
+/*------------KONTAKT---------------*/
+
+.kontakt {
+  padding-left: 50px;
+  padding-top: 60px;
+  background-color: white;
+}
+
+.kontakt p {
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.hvid {
+background: white;
+}
+
+h3 {
+font-family: oswald, sans-serif;
+font-size: 22px;
+}
+
+.kontakt h2 {
+font-family: oswald, sans-serif;
+font-size: 16px;
+}
+
+.fb {
+padding-top: 10px;
+}
+
+.fb h2 {
+color: #4267b2;
+font-family: 'Merriweather', serif;
+font-size: 13px;
+}
+
+/*------------FOREDRAG---------------*/
+
+.foredrag {
+  padding-left: 50px;
+  padding-top: 60px;
+  background-color: white;
+}
+
+.foredrag p {
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/*------------ OM CHARLOTTE ---------------*/
+
+.omcharlotte {
+  padding-left: 50px;
+  padding-top: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cl {
+    padding-right: 50px;
+}
+
+.omtekst {
+    padding-right: 50px;
+}
+
+/*------------ OMBØGERNE-SIDERNE ---------------*/
+
+.ombogen {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+    background: white;
+    padding-bottom: 50px;
+    min-height: 100%;
+}
+
+.om {
+margin-right: 50px;
+}
+
+.om h2 {
+font-family: 'Oswald', sans-serif;
+color: #373737;
+font-size: 28px;
+}
+
+.billede {
+margin-right: 50px;
+margin-bottom: 50px;
+
+}
+
+.citat-boks {
+    text-align: center;
+    color: black;
+    background: rgba(112, 173, 173, 0.19);
+    display: block;
+    padding: 25px;
+    background-position: center;
+}
+
+
+.citat-boks p {
+    padding-bottom: 18px;
+}
+
+.box {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.box h4 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.billede h5 {
+    font-size: 18px;
+}
+
+.venstre {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: -15px;
+    top: -30px;
+}
+
+.hojre {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: -15px;
+    bottom: -30px;
+}
+
+.buy h3 {
+color: #373737;
+font-weight: 200;
+font-size: 15px;
+margin-top: 50px;
+font-family: 'Overpass', sans-serif;
+border: 1px solid #373737;
+padding: 10px;
+width: 20%;
+text-align: center;
+}
+
+
+.buy h3:hover {
+color: #898989;
+border: 1px solid #898989;
+}
+
+/*------------ MEDIA QUERIES ---------------*/
+
+
+@media only screen and (max-width: 640px) {
+   header * {
+       font-size: 100% !important;
+    }
+    
+      .nav .horizontal-li a {
+    font-size: 17px;
+}
+    
+    .buy h3 {
+   width: 45%;
+}
+    
+    
+}
+
+@media only screen and (max-width: 900px) {
+   header * {
+       font-size: 100% !important;
+    }
+    
+    .bedraget {
+    flex-direction: column-reverse;
+    align-items: center;  
+    }
+    
+    #bedraget {
+    transform: rotate(0deg);
+}
+    
+    .anmeldelser {
+    display: flex;
+    flex-direction: column;
+}
+    
+   .anmeldelser2 {
+    display: flex;
+    flex-direction: column;
+}
+   
+    
+    .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    padding-top: 30px;
+    flex-direction: column;
+}
+    
+    .ombogen {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+   
+}
+    
+    .link {
+align-self: center;
+}
+    
+    .billede {
+margin-right: 50px;
+align-self: center;
+margin-top: 20px;
+}
+    
+header {
+    height: 60px;
+    }
+    
+    #bedraget {
+    margin-bottom: 30px;
+}
+
+.foto {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+    
+    .omcharlotte {
+    flex-direction: column;
+    }
+    
+    .cl {
+    align-self: center;
+    margin-bottom: 20px;
+    }
+    
+    h1 span {
+    line-height: 20px;
+}
+    
+    .ombogen img {
+        max-width: 100%;
+
+    }
+    
+    .kort {
+    display: flex;
+    flex-direction: column-reverse;
+        padding-bottom: 5px;
+        padding-top: 30px;
+}
+    .kort img {
+        max-width: 100%;
+        align-self: center;
+    }
+    
+    .kort p {
+        align-self: center;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
